@@ -14,10 +14,6 @@ A brief description of your project.
 
 Provide a detailed explanation of the project's purpose and functionality.
 
-## Getting Started
-
-### Prerequisites
-
 List any dependencies or software required to run the project.
 
 ### Installation
