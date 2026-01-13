@@ -9,7 +9,7 @@ export default function IntroScreen({ onNext }) {
         <div className="py-10 md:py-14 text-center">
             <div className="flex flex-col items-center gap-6">
                 <Image
-                    src="/gifs/intro.gif"
+                    src="./gifs/intro.gif"
                     alt="Cute birthday animation topper"
                     width={180}
                     height={180}
