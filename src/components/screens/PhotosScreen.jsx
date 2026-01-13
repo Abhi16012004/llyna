@@ -8,6 +8,7 @@ import "swiper/css"
 import "swiper/css/effect-cards"
 import { Mail } from "lucide-react"
 import GradientButton from "../GradientButton"
+import Image from "next/image"
 
 export default function PhotosScreen({ onNext }) {
   const swiperRef = useRef(null)
@@ -59,11 +60,13 @@ export default function PhotosScreen({ onNext }) {
           >
             {photos.map((src, i) => (
               <SwiperSlide key={i}>
-                <div className="h-full w-full rounded-2xl">
-                  <img
+                <div className="relative h-full w-full rounded-2xl overflow-hidden">
+                  <Image
                     src={src}
                     alt={`Memory ${i + 1}`}
-                    className="h-full w-full rounded-xl object-cover"
+                    fill
+                    className="object-cover"
+                    unoptimized
                   />
                 </div>
               </SwiperSlide>
